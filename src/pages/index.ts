@@ -1,3 +1,4 @@
 import Home from './Home';
+import Sobre from './Sobre';
 
-export { Home };
+export { Home, Sobre };

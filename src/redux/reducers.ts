@@ -5,15 +5,15 @@ type actionType = {
     payload: number,
 };
 
-const EstadoInicialJogos = {
-    Pontos: 0,
+const EstadoInicialJogos: {pontos: number, jogos: string[]} = {
+    pontos: 0,
     jogos: [],
 };
 const Jogos = (state = EstadoInicialJogos, action: actionType) => {
     const stateProvisorio = {...state};
     switch (action.type) {
         case "Ganhar_pontos":
-            stateProvisorio.Pontos+= action.payload;
+            stateProvisorio.pontos+= action.payload;
             break;
         default:
             break;
@@ -21,8 +21,8 @@ const Jogos = (state = EstadoInicialJogos, action: actionType) => {
     return stateProvisorio;
 };
 
-const Reducer = combineReducers({
+const rootReducer = combineReducers({
     Jogos,
 });
 
-export default Reducer;
+export default rootReducer;

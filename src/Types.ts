@@ -1,6 +1,6 @@
 type useSelectorType = {
     Jogos: {
-        Pontos: number,
+        pontos: number,
         jogos: string[],
     },
 }

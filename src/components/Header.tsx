@@ -4,7 +4,7 @@ import useSelectorType from "../Types";
 
 function Header()
 {
-    const Pontos = useSelector((state: useSelectorType) => state.Jogos.Pontos);
+    const Pontos = useSelector((state: useSelectorType) => state.Jogos.pontos);
     return(
         <header>
             <div>logo</div>
